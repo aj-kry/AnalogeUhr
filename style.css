@@ -18,7 +18,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: linear-gradient(to bottom left,rgb(97, 95, 95),#ffffff);
+    background-image: linear-gradient(to bottom left,rgb(117, 114, 115),#ffffff);
 }
 /* Is the hand for the minutes */
 .min-hand {
