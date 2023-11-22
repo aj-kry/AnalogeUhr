@@ -1,54 +1,49 @@
 .clock {
     /* Additional styling for the clock container */
-    width: 200px; /* Set the desired width */
-    height: 200px; /* Set the desired height */
+    width: 200px;
+    height: 200px;
     border: 2px solid #000;
     border-radius: 50%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('Screenshot\ 2023-11-22\ 130217.png') no-repeat center center;
+    background: url('Screenshot\ 2023-11-22\ 153134.png') no-repeat center center;
     background-size: cover;
-    
 }
-  
+  /* Makes the picture for the Backround */
   body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: linear-gradient(to bottom left,rgb(97, 95, 95),#ffffff);
 }
-
+/* Is the hand for the minutes */
 .min-hand {
     width: 3px;
     height: 85px;
     z-index: 2;
-    background-color: #a6a4a4;
+    background-color: #000000;
     position: absolute;
   bottom: 50%;
   left: 50%;
   transform-origin: 50% 100%;
-  
 }
-
-
-
+/* Is the hand for the hours */
 .hour-hand {
     width: 4px;
     height: 60px;
     z-index: 1;
-    background-color: #a6a4a4;
+    background-color: #000000;
     position: absolute;
     bottom: 50%;
     left: 50%;
     transform-origin: 50% 100%;
     transform: translate(-50%, -100%);
-
-
 }
-
+/* Is the hand for the seconds */
 .second-hand {
     width: 2px;
     height: 90px;
@@ -57,15 +52,15 @@
     position: absolute;
     bottom: 50%;
     left: 50%;
-    transform-origin: 50% 100%;  
+    transform-origin: 50% 100%;
     transform: translate(-50%, -100%);
 }
-
+/* Set the four markings of the Clock */
   .marking {
     position: absolute;
     width: 4px;
     height: 15px;
-    background: #828085;
+    background: #000000;
     top: 0%;
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
