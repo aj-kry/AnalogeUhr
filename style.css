@@ -1,47 +1,86 @@
-body {
+.clock {
+    /* Additional styling for the clock container */
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    margin: 20;
-}
-.clock {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #333;
-    border-radius: 50%;
+    background: url('Screenshot\ 2023-11-22\ 130217.png') no-repeat center center;
+    background-size: cover;
     
 }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .min-hand {
-    width: 4px;
-    height: 100px;
-    z-index: 2;
-    background-color: #000;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%) rotate(0deg);
-}
-.hour-hand {
     width: 3px;
-    height: 100px;
+    height: 85px;
     z-index: 2;
-    background-color: #000;
+    background-color: #a6a4a4;
     position: absolute;
-  top: 50%;
-  left: 74%;
-  transform: translate(-50%, -50%) rotate(90deg);
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  
+}
+
+
+
+.hour-hand {
+    width: 4px;
+    height: 60px;
+    z-index: 1;
+    background-color: #a6a4a4;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: translate(-50%, -100%);
 
 
 }
+
 .second-hand {
     width: 2px;
     height: 90px;
+    z-index: 3;
     background-color: red;
     position: absolute;
-    top: 30%;
-    left: 57%;
-    transform: translate(-50%, -50%) rotate(20deg);
-  
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;  
+    transform: translate(-50%, -100%);
 }
+
+  .marking {
+    position: absolute;
+    width: 4px;
+    height: 15px;
+    background: #828085;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+  .marking-one {
+    transform: translateX(-30%) translateY(-10%) rotate(0deg);
+}
+  .marking-two {
+    transform: translateX(-30%) translateY(1245%) rotate(0deg);
+}
+  .marking-three {
+    transform: translateX(2270%) translateY(620%) rotate(90deg);
+}
+  .marking-four {
+    transform: translateX(-2350%) translateY(620%) rotate(90deg);
+}
+
+
